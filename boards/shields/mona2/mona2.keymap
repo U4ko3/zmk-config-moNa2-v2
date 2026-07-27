@@ -7,8 +7,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
-#define MOUSE 5
-#define SCROLL 6
+#define MOUSE 3
+#define SCROLL 4
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 
