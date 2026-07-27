@@ -118,7 +118,7 @@
         win_layer {
             bindings = <
 &mt LEFT_SHIFT Q  &kp W         &kp E         &kp R                        &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &mt MINUS P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                    &kp JP_COLON   &kp H        &kp J  &kp K      &kp L    &mt JP_COLON MINUS
+&kp A             &kp S         &kp D         &kp F                        &kp G                                         &kp JP_COLON   &kp H        &kp J  &kp K      &kp L    &mt JP_COLON MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &lt 5 LEFT_SHIFT                 &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt SEMICOLON SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 6 LANGUAGE_1      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
@@ -131,7 +131,7 @@
         function_win {
             bindings = <
 &kp ESCAPE      &kp JP_HANZEN  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK                       &kp F1        &kp F2        &kp F3      &kp F4       &kp F5
-&kp TAB         &trans         &kp INSERT       &kp HOME        &kp PAGE_UP      &trans      &kp F13  &kp F6        &kp F7        &kp F8      &kp F9       &kp F10
+&kp TAB         &trans         &kp INSERT       &kp HOME        &kp PAGE_UP                  &kp F13  &kp F6        &kp F7        &kp F8      &kp F9       &kp F10
 &kp CAPS        &trans         &kp DELETE       &kp END         &kp PAGE_DOWN    &trans      &trans   &kp JP_CARET  &kp JP_TILDE  &kp JP_YEN  &kp JP_PIPE  &kp F11
 &kp LEFT_SHIFT  &trans         &trans           &trans          &trans           &trans      &kp DEL  &trans                                               &kp F12
             >;
@@ -140,7 +140,7 @@
         num_win {
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp PAGE_UP                        &trans          &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &trans           &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END        &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW          &kp UP_ARROW             &kp RIGHT_ARROW  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW          &kp UP_ARROW             &kp RIGHT_ARROW  &trans
 &kp LEFT_SHIFT  &kp LG(LC(LEFT_ARROW))  &trans          &kp LG(LC(RIGHT_ARROW))  &kp PAGE_DOWN  &trans      &trans  &trans          &kp LC(LS(PG_UP))       &kp LC(LS(PG_DN))        &trans           &trans
 &trans          &trans                  &trans          &trans                   &trans         &trans      &trans  &trans                                                                            &trans
             >;
@@ -151,7 +151,7 @@
         mouse_win {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &msc SCRL_DOWN  &trans    &msc SCRL_UP  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1        &mkp MB3  &mkp MB2      &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &mkp MB1        &mkp MB3  &mkp MB2      &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4        &trans    &mkp MB5      &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                          &trans
             >;
@@ -162,7 +162,7 @@
         scroll_win {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
@@ -173,7 +173,7 @@
         ble_win {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &kp NUMBER_4  &trans        &trans        &trans  &trans      &trans       &studio_unlock &trans        &trans        &trans        &trans
+&trans  &kp NUMBER_4  &trans        &trans        &trans              &trans       &studio_unlock &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
