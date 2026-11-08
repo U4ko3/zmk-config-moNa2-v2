@@ -92,6 +92,12 @@
 };
 
 &mouse_runtime_input_processor {
+    // MOUSEレイヤーで &trans 以外が割り当てられたキーと修飾キーでは AML から離脱しない
+    temp-layer-enabled;
+    temp-layer = <4>;
+    temp-layer-activation-delay-ms = <400>; // キー入力後400ms以内はAMLに切り替わらない
+    temp-layer-deactivation-delay-ms = <65535>; // タイムアウト時間（最大65535ms）
+
 };
 
 /* ─────────────────────────────────────────────────────────────
