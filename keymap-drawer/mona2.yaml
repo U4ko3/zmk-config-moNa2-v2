@@ -211,8 +211,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SCRL_W:
@@ -301,14 +301,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
-combos:
-- p: [39, 38]
-  k: {t: ESC, h: MOUSE_W}
-- p: [11, 12]
-  k: TAB
-- p: [12, 13]
-  k: Sft+TAB
-- p: [20, 21]
-  k: '"'
-- p: [24, 25]
-  k: '='
