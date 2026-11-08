@@ -8,7 +8,7 @@ layers:
   - T
   - Y
   - U
-  - {t: I, h: BLE_W}
+  - {t: I, h: SCRL_W}
   - O
   - {t: P, h: '-'}
   - A
@@ -37,9 +37,9 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: '&to_layer_0 LANGUAGE_2', h: ARROW_W}
+  - {t: LANGUAGE 2, h: ARROW_W}
   - {t: SPACE, h: NUM_W}
-  - {t: '&to_layer_0 LANGUAGE_1', h: BLE_W}
+  - {t: LANGUAGE 1, h: BLE_W}
   - BACKSPACE
   - {t: ENTER, h: FN_W}
   - DEL
@@ -266,7 +266,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -438,7 +438,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
-  - {t: BT, h: '2', type: held}
+  - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - {t: ▽, type: trans}
@@ -469,7 +469,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
