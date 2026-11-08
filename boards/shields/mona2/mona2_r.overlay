@@ -80,34 +80,17 @@
 
 /* ─────────────────────────────────────────────────────────────
    scroll_runtime_input_processor をスクロール変換器として上書き
-
-   デフォルトでは x-codes=HWHEEL / y-codes=WHEEL で
-   「すでにスクロールイベントになっているもの」しか処理しない設定。
-   トラックボールの生イベント(REL_X/Y) を受け取って
-   xy-to-scroll-enabled でスクロールに変換する形に切替える。
-
-   ・active-layers : デフォルトのスクロールレイヤー bitmask
-                     bit6=scroll_win, bit7=scroll_mac → 0x000000C0
-                     DYA Studio から変更可能(再ビルド不要)
-   ・xy-to-scroll-enabled : REL_X→HWHEEL, REL_Y→WHEEL に変換
-                            こちらも Studio から ON/OFF 可能
    ────────────────────────────────────────────────────── */
 &scroll_runtime_input_processor {
     x-codes = <INPUT_REL_X>;
     y-codes = <INPUT_REL_Y>;
     xy-to-scroll-enabled;
-    active-layers = <0x00000020>;  /* layer6 + layer7 */
+    active-layers = <0x000000C0>; /* layer6 + layer7 */
     scale-multiplier = <1>;
-    scale-divisor = <4>;            /* スクロール速度。大きいほど遅い。Studioで調整可 */
-    /* 軸ロック(縦のみ等)が欲しければ AXIS_SNAP_MODE_Y を初期値に */
-    /* #include <dt-bindings/zmk/runtime_input_processor.h> 必要 */
-    /* axis-snap-mode = <2>; */
-    /* axis-snap-threshold = <100>; */
+    scale-divisor = <1>;   /* Studio UI の倍率がそのまま実効値 (1.0x基準)。固定減速は listener 側 zip_scroll_scaler */
 };
 
-/* マウス用は全レイヤーで有効 (active-layers = 0 がデフォルト) */
 &mouse_runtime_input_processor {
-    /* 例: マウス感度初期値を Studio から調整したいだけならここで触らなくてOK */
 };
 
 /* ─────────────────────────────────────────────────────────────

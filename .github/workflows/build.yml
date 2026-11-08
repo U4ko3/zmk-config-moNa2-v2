@@ -1,5 +1,9 @@
+name: Build firmware
+
 on: [push, pull_request, workflow_dispatch]
 
+# Use the standard ZMK workflow to publish firmware binaries only.
+# ZMK v0.4 / Zephyr 4.1 requires the current HWMv2-compatible workflow.
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3.0
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
